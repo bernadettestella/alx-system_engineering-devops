@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 #script to start Apache running on the container and return page on query
-
 echo "Hello Holberton" >>/etc/apache2.config
 service apache2 start
