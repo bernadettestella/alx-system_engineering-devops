@@ -11,13 +11,13 @@ apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 
 # change the owner of the /var/www directory to the current user recursively. To allow modification of the files in the directory.
-sudo chown -R $USER /var/www
+sudo chown -R "$USER" /var/www
 
 # set up a page containing "Hello World" when queried at the root with a curl GET request.
 echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 
 # change the owner of the /etc/nginx/sites-available/defaul/etc/nginx/sites-available/default,to enable modification of the config file.
-sudo chown -R $USER /etc/nginx/sites-available/default
+sudo chown -R "$USER" /etc/nginx/sites-available/default
 
 # Making a backup of the default file, in case something goes wrong
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
