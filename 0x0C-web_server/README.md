@@ -1,1 +1,1 @@
--y on apt-get command
+A project on configuring to the servers
