@@ -2,6 +2,6 @@
 #configuration using the private key
 #configured to refuse the use of passwords
 
-Host 34.229.161.226
+Host 34.229.55.101
 IdentifyFile ~/.ssh/school
 PasswordAuthentication no
